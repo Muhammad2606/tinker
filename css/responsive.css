@@ -1,0 +1,36 @@
+@media only screen and (max-width:768px){
+    .navbar__nav a{
+        display: none;
+    }
+    .banner p{
+        width: 80%;
+    }
+    .about__content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }   
+    .gallery__contact{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+    .swiper{
+        width: 100%;
+        height: 100%;
+    }
+    .blog__content{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+    .contact .title p{
+        width: 100%;
+
+    }
+    .footer__content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
