@@ -2,6 +2,11 @@
     .navbar__nav a{
         display: none;
     }
+    .navbar__nav .fa-bars{
+        font-size: 1.5rem;
+        color: #86551c;
+        display: block;
+    }
     .banner p{
         width: 80%;
     }
@@ -31,6 +36,44 @@
     .footer__content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .footer__media .socila i{
+        margin-left: 5px;
+        gap: 1rem;
+        margin-top: 5px;
+ 
+    }
+
+}
+@media only screen and (max-width:352px){
+    .container{
+        max-width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .about__content{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 3rem;
+    }   
+    .gallery__contact{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+    .blog__content{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 2rem;
+    }
+    .contact .title p{
+        width: 100%;
+
+    }
+    .footer__content{
+        display: grid;
+        grid-template-columns: 100%;
         gap: 2rem;
     }
 }

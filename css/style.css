@@ -50,13 +50,17 @@ img{
     z-index: 11;
 }
  .navigation__add{
+    width: 100%;
     background-color: #fff;
     color: #000;
     height: 10vh;
+    
 }
 .navigation__remove{
+    width: 100%;
     background-color: rgba(0, 0, 0, 0);
     color: #fff;
+    
 }
 
 .navbar{
@@ -65,6 +69,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .navbar__logo a{
     color: #fff;
@@ -88,15 +93,13 @@ img{
     letter-spacing: 1.5px;
 }
 .navbar__nav .fa-bars{
-    font-size: 1.5rem;
-    color: #86551c;
+    display: none;
 }
 .banner{
-
     position: absolute;
-    text-align: center;
-    margin: 0 auto;
+    width: 100%;
     margin-top: 18%;
+    text-align: center;
 }
 .banner h1{
     color: #fff;
