@@ -140,3 +140,34 @@
 
                         btn.addEventListener('click', showModal);
                         btnClose.addEventListener('click', hideModal);
+
+
+                        // add navbar 
+
+                        const addNavbar = document.querySelector('.add__navbar'),
+                              bars = document.querySelector('.fa-bars'),
+                              addNavbarItem = addNavbar.querySelectorAll('a');
+
+                      
+                               bars.addEventListener('click', () =>{
+                                addNavbar.classList.add('show','flicker-in-1');
+                                addNavbar.classList.remove('hide');
+                               });
+                               
+                              addNavbar.addEventListener('click', (Event) =>{
+                                    if(addNavbar == Event.target){
+                                    addNavbar.classList.add('hide');
+                                    addNavbar.classList.remove('show','flicker-in-1'); 
+                                }
+                            });
+                            addNavbar.addEventListener('click', (Event) =>{
+                                addNavbarItem.forEach((item) =>{
+                                    if(item == Event.target){
+                                        addNavbar.classList.add('hide');
+                                        addNavbar.classList.remove('show'); 
+                                    }
+                                });
+                           
+                        });
+                           
+                               

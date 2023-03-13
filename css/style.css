@@ -487,7 +487,40 @@ img{
         margin-top: 2rem;
         border: none;
     }
-    
+    .add__navbar{
+        width: 100%;
+        height: 100vh;
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        border: 1px solid rgba(0, 0, 0, 0);
+        display: none;
+    }
+    .nav__wrapper{
+        width: 100%;
+        margin:  0 auto;
+        padding: 0.8rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        margin-top: 8vh;
+       
+    }
+    .nav__wrapper a{
+        color: #000;
+        font-family: var(--monster);
+        font-size: 1.3rem;
+        gap: 2rem;
+        margin-top: 0.5rem;
+        transition:all 0.5s linear;
+    }
+    .nav__wrapper a:hover{
+        color: red;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+
 .fade{
     animation: fade 1s;
 }
