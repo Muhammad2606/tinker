@@ -1,5 +1,5 @@
-
-
+window.addEventListener('DOMContentLoaded', () =>{
+    
   // navigation
   const navigation = document.querySelector('.navigation');
   const navbar = document.querySelector('.navbar__nav'),
@@ -125,26 +125,31 @@
                     });
 
                     // modal
+                    function funModal (){
+                        
                     const modal = document.querySelector('.modal'),
-                          btnClose = document.querySelector('.close__modal'),
-                          btn = document.querySelector('.openModal');
+                    btnClose = document.querySelector('.close__modal'),
+                    btn = document.querySelector('.openModal');
 
-                          function hideModal () {
-                            modal.classList.add('hide');
-                            modal.classList.remove('show','slide-in-elliptic-top-fwd');
-                          }
-                          function showModal (){
-                            modal.classList.add('show','slide-in-elliptic-top-fwd');
-                            modal.classList.remove('hide');
-                          }
+                    function hideModal () {
+                      modal.classList.add('hide');
+                      modal.classList.remove('show','slide-in-elliptic-top-fwd');
+                    }
+                    function showModal (){
+                      modal.classList.add('show','slide-in-elliptic-top-fwd');
+                      modal.classList.remove('hide');
+                    }
 
-                        btn.addEventListener('click', showModal);
-                        btnClose.addEventListener('click', hideModal);
+                  btn.addEventListener('click', showModal);
+                  btnClose.addEventListener('click', hideModal);
 
+                    }
+                    funModal();
 
                         // add navbar 
 
-                        const addNavbar = document.querySelector('.add__navbar'),
+                        function funNavbar (){
+                            const addNavbar = document.querySelector('.add__navbar'),
                               bars = document.querySelector('.fa-bars'),
                               addNavbarItem = addNavbar.querySelectorAll('a');
 
@@ -169,5 +174,7 @@
                                 });
                            
                         });
+                        }
+                        funNavbar();
                            
-                               
+                    });
